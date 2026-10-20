@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- Android / Chrome Mobile Web App -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="CashFix" />
+    <meta name="theme-color" content="#1d4ed8" />
+    
+    <!-- Apple iOS Safari Web App -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CashFix" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Favicon & PWA Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/cashfix-icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>CashFix - Bilingual POS &amp; Ordering</title>
+    <meta name="description" content="CashFix: Comprehensive bilingual (English &amp; Arabic) Cashier POS &amp; QR Self-Ordering System with offline availability, iOS &amp; Android support, Wi-Fi thermal printer support, dual pricing, and live shift sales reporting." />
+    <meta property="og:title" content="CashFix - Bilingual POS &amp; Ordering" />
+    <meta property="og:description" content="CashFix: Comprehensive bilingual (English &amp; Arabic) Cashier POS &amp; QR Self-Ordering System with offline availability, iOS &amp; Android support, Wi-Fi thermal printer support, dual pricing, and live shift sales reporting." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Fonts: Cairo (Arabic), Plus Jakarta Sans (English), JetBrains Mono (Thermal Receipts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      // Gracefully silence Vite HMR WebSocket errors in cloud/iframe preview environments
+      window.addEventListener('error', function (event) {
+        if (
+          event.message &&
+          (event.message.includes('WebSocket') ||
+            event.message.includes('vite') ||
+            (event.filename && event.filename.includes('@vite/client')))
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('unhandledrejection', function (event) {
+        if (
+          event.reason &&
+          typeof event.reason.message === 'string' &&
+          (event.reason.message.includes('WebSocket') ||
+            event.reason.message.includes('vite'))
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

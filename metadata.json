@@ -1,0 +1,6 @@
+{
+  "name": "CashFix - Bilingual POS & Ordering",
+  "description": "CashFix: Comprehensive bilingual (English & Arabic) Cashier POS & QR Self-Ordering System with offline availability, iOS & Android support, Wi-Fi thermal printer support, dual pricing, and live shift sales reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
